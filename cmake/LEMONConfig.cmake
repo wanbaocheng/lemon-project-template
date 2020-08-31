@@ -20,7 +20,7 @@ find_path(LEMON_SOURCE_ROOT_DIR CMakeLists.txt
         NO_DEFAULT_PATH
         DOC "Location of LEMON source as a CMAKE subproject")
 if (EXISTS ${LEMON_SOURCE_ROOT_DIR})
-    add_subdirectory(${LEMON_SOURCE_ROOT_DIR})
+    add_subdirectory(${LEMON_SOURCE_ROOT_DIR} deps/lemon)
     set(LEMON_INCLUDE_DIRS
             ${LEMON_SOURCE_ROOT_DIR}
             ${CMAKE_BINARY_DIR}/deps/lemon
